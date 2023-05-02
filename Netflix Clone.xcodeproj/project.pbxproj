@@ -17,6 +17,7 @@
 		1969203E29FFC3ED00314F31 /* StandartHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1969203D29FFC3ED00314F31 /* StandartHomeMovie.swift */; };
 		1969204029FFC4DB00314F31 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1969203F29FFC4DB00314F31 /* GlobalHelpers.swift */; };
 		1969204329FFC9FC00314F31 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1969204229FFC9FC00314F31 /* HomeVM.swift */; };
+		19A8B11E2A014B4A0034608B /* LandingMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8B11D2A014B4A0034608B /* LandingMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		1969203D29FFC3ED00314F31 /* StandartHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartHomeMovie.swift; sourceTree = "<group>"; };
 		1969203F29FFC4DB00314F31 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		1969204229FFC9FC00314F31 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		19A8B11D2A014B4A0034608B /* LandingMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		1969202629FFB7A100314F31 /* Netflix Clone */ = {
 			isa = PBXGroup;
 			children = (
+				19A8B11C2A014B2F0034608B /* LandingMovie */,
 				1969204129FFC9E700314F31 /* Home */,
 				1969202729FFB7A100314F31 /* Netflix_CloneApp.swift */,
 				1969202929FFB7A100314F31 /* ContentView.swift */,
@@ -92,6 +95,14 @@
 				1969204229FFC9FC00314F31 /* HomeVM.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		19A8B11C2A014B2F0034608B /* LandingMovie */ = {
+			isa = PBXGroup;
+			children = (
+				19A8B11D2A014B4A0034608B /* LandingMovie.swift */,
+			);
+			path = LandingMovie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			files = (
 				1969204029FFC4DB00314F31 /* GlobalHelpers.swift in Sources */,
 				1969203729FFBEA500314F31 /* HomeView.swift in Sources */,
+				19A8B11E2A014B4A0034608B /* LandingMovie.swift in Sources */,
 				1969204329FFC9FC00314F31 /* HomeVM.swift in Sources */,
 				1969202A29FFB7A100314F31 /* ContentView.swift in Sources */,
 				1969203C29FFC37400314F31 /* Movie.swift in Sources */,

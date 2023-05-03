@@ -35,6 +35,7 @@ struct LandingMovie: View {
                     ForEach(movie.categories, id: \.self) {category in
                         HStack {
                             Text(category)
+                                .font(.footnote)
                             if !isCategoryLast(category) {
                                 Image(systemName: "circle.fill")
                                     .foregroundColor(Color.blue)
@@ -43,7 +44,11 @@ struct LandingMovie: View {
                         }
                     }
                 }
-                Text("Row of buttons")
+                HStack {
+                    Text("My List")
+                    Text("Play Button")
+                    Text("Info Button")
+                }
             }
         }
         .foregroundColor(Color.white)

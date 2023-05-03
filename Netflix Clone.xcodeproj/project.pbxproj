@@ -18,6 +18,7 @@
 		1969204029FFC4DB00314F31 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1969203F29FFC4DB00314F31 /* GlobalHelpers.swift */; };
 		1969204329FFC9FC00314F31 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1969204229FFC9FC00314F31 /* HomeVM.swift */; };
 		19A8B11E2A014B4A0034608B /* LandingMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8B11D2A014B4A0034608B /* LandingMovie.swift */; };
+		19A8B1202A02D98D0034608B /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8B11F2A02D98D0034608B /* SmallVerticalButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		1969203F29FFC4DB00314F31 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		1969204229FFC9FC00314F31 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		19A8B11D2A014B4A0034608B /* LandingMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingMovie.swift; sourceTree = "<group>"; };
+		19A8B11F2A02D98D0034608B /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				1969203D29FFC3ED00314F31 /* StandartHomeMovie.swift */,
 				1969202E29FFB7A200314F31 /* Preview Content */,
 				1969203F29FFC4DB00314F31 /* GlobalHelpers.swift */,
+				19A8B11F2A02D98D0034608B /* SmallVerticalButton.swift */,
 			);
 			path = "Netflix Clone";
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				1969203C29FFC37400314F31 /* Movie.swift in Sources */,
 				1969203E29FFC3ED00314F31 /* StandartHomeMovie.swift in Sources */,
 				1969202829FFB7A100314F31 /* Netflix_CloneApp.swift in Sources */,
+				19A8B1202A02D98D0034608B /* SmallVerticalButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

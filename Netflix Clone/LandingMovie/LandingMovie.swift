@@ -63,6 +63,10 @@ struct LandingMovie: View {
                     Spacer()
                 }
             }
+            .background(
+                LinearGradient.blackOpacityGradient
+                .padding(.top, 250)
+            )
         }
         .foregroundColor(Color.white)
     }

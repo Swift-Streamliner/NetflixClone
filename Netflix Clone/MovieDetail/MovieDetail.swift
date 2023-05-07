@@ -33,6 +33,11 @@ struct MovieDetail : View {
                             .frame(width: screen.width / 2.5)
                         
                         MovieInfoSubheadline(movie: movie)
+                        if (movie.promotionHeadline != nil) {
+                            Text(movie.promotionHeadline!)
+                                .bold()
+                                .font(.headline)
+                        }
                     }
                 }
                 Spacer()

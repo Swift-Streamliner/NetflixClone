@@ -25,6 +25,9 @@
 		19B1689F2A07599E00C16B7E /* MovieInfoSubheadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1689E2A07599E00C16B7E /* MovieInfoSubheadline.swift */; };
 		19B168A22A075BAB00C16B7E /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B168A12A075BAB00C16B7E /* Episode.swift */; };
 		19B168A42A075C9100C16B7E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B168A32A075C9100C16B7E /* RatingView.swift */; };
+		19B168A62A0A696000C16B7E /* CurrentEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B168A52A0A696000C16B7E /* CurrentEpisode.swift */; };
+		19B168A82A0A82F500C16B7E /* CastInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B168A72A0A82F500C16B7E /* CastInfo.swift */; };
+		19B168AA2A0A83F000C16B7E /* CurrentEpisodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B168A92A0A83F000C16B7E /* CurrentEpisodeInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		19B1689E2A07599E00C16B7E /* MovieInfoSubheadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoSubheadline.swift; sourceTree = "<group>"; };
 		19B168A12A075BAB00C16B7E /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		19B168A32A075C9100C16B7E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		19B168A52A0A696000C16B7E /* CurrentEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentEpisode.swift; sourceTree = "<group>"; };
+		19B168A72A0A82F500C16B7E /* CastInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastInfo.swift; sourceTree = "<group>"; };
+		19B168A92A0A83F000C16B7E /* CurrentEpisodeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentEpisodeInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,8 @@
 				19B1689C2A06CE5B00C16B7E /* MovieDetail.swift */,
 				19B1689E2A07599E00C16B7E /* MovieInfoSubheadline.swift */,
 				19B168A32A075C9100C16B7E /* RatingView.swift */,
+				19B168A72A0A82F500C16B7E /* CastInfo.swift */,
+				19B168A92A0A83F000C16B7E /* CurrentEpisodeInfo.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 			children = (
 				1969203B29FFC37400314F31 /* Movie.swift */,
 				19B168A12A075BAB00C16B7E /* Episode.swift */,
+				19B168A52A0A696000C16B7E /* CurrentEpisode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,8 +238,11 @@
 				1969202A29FFB7A100314F31 /* ContentView.swift in Sources */,
 				1969203C29FFC37400314F31 /* Movie.swift in Sources */,
 				19B168A22A075BAB00C16B7E /* Episode.swift in Sources */,
+				19B168A62A0A696000C16B7E /* CurrentEpisode.swift in Sources */,
 				1969203E29FFC3ED00314F31 /* StandartHomeMovie.swift in Sources */,
+				19B168A82A0A82F500C16B7E /* CastInfo.swift in Sources */,
 				1969202829FFB7A100314F31 /* Netflix_CloneApp.swift in Sources */,
+				19B168AA2A0A83F000C16B7E /* CurrentEpisodeInfo.swift in Sources */,
 				19A8B1202A02D98D0034608B /* SmallVerticalButton.swift in Sources */,
 				19A8B1222A0394510034608B /* PlayButton.swift in Sources */,
 			);

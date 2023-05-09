@@ -38,8 +38,17 @@ struct MovieDetail : View {
                                 .bold()
                                 .font(.headline)
                         }
+                        
+                        PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red) {
+                            
+                        }
+                        
+                        CurrentEpisodeInfo(movie: movie)
+                        
+                        CastInfo(movie: movie)
                     }
                 }
+                .padding(.horizontal, 10)
                 Spacer()
             }
             .foregroundColor(.white)

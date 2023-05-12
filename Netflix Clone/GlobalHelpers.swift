@@ -19,6 +19,7 @@ let exampleMovie1 = Movie(
     defaultEpisode: exampleEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: exampleMovies,
     promotionHeadline: "Watch Season 1 Now")
 
 let exampleMovie2 = Movie(
@@ -31,7 +32,8 @@ let exampleMovie2 = Movie(
     numberOfSeasons: 2,
     defaultEpisode: exampleEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
-    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [])
 
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
@@ -44,6 +46,7 @@ let exampleMovie3 = Movie(
     defaultEpisode: exampleEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
     promotionHeadline: "New Episodes Coming Soon")
 
 let exampleMovie4 = Movie(
@@ -55,7 +58,8 @@ let exampleMovie4 = Movie(
     rating: "TV-MA",
     defaultEpisode: exampleEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
-    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [])
 
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
@@ -65,7 +69,8 @@ let exampleMovie5 = Movie(
     year: 2019, rating: "TV-MA",
     defaultEpisode: exampleEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
-    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [])
 
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
@@ -76,9 +81,24 @@ let exampleMovie6 = Movie(
     rating: "TV-MA",
     defaultEpisode: exampleEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
-    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [])
 
-let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+let exampleMovie7 = Movie(
+    id: UUID().uuidString,
+    name: "After Dark",
+    thumbnailURL: URL(string: "https://picsum.photos/200/306")!,
+    categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+    year: 2011,
+    rating: "TV-MA",
+    defaultEpisode: exampleEpisode1,
+    creators: "Tom Cruise",
+    cast: "Tom Cruise",
+    moreLikeThisMovies: [])
+
+var exampleMovies: [Movie] {
+    return [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7].shuffled()
+}
 
 let exampleEpisode1 = CurrentEpisode(episodeName: "Bringing the Ending", description: "Six months after the disappearances the police from a task for. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 2, episode: 1)
 

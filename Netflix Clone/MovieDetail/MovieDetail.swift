@@ -62,7 +62,7 @@ struct MovieDetail : View {
                         }
                         .padding(.leading, 20)
                         
-                        CustomTabSwitcher(tabs: [.episodes, .trailers, .more])
+                        CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movies: movie.moreLikeThisMovies)
                     }
                 }
                 .padding(.horizontal, 10)

@@ -33,7 +33,7 @@ let exampleMovie1 = Movie(
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 1,
-    defaultEpisode: exampleEpisode1,
+    defaultEpisode: exampleCurrentEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: exampleMovies,
@@ -48,7 +48,7 @@ let exampleMovie2 = Movie(
     year: 2021,
     rating: "TV-MA",
     numberOfSeasons: 2,
-    defaultEpisode: exampleEpisode1,
+    defaultEpisode: exampleCurrentEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [],
@@ -62,7 +62,7 @@ let exampleMovie3 = Movie(
     year: 2022,
     rating: "TV-MA",
     numberOfSeasons: 3,
-    defaultEpisode: exampleEpisode1,
+    defaultEpisode: exampleCurrentEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [],
@@ -76,7 +76,7 @@ let exampleMovie4 = Movie(
     categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
     year: 2023,
     rating: "TV-MA",
-    defaultEpisode: exampleEpisode1,
+    defaultEpisode: exampleCurrentEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [],
@@ -88,7 +88,7 @@ let exampleMovie5 = Movie(
     thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
     categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
     year: 2019, rating: "TV-MA",
-    defaultEpisode: exampleEpisode1,
+    defaultEpisode: exampleCurrentEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [],
@@ -101,7 +101,7 @@ let exampleMovie6 = Movie(
     categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
     year: 2022,
     rating: "TV-MA",
-    defaultEpisode: exampleEpisode1,
+    defaultEpisode: exampleCurrentEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [],
@@ -114,7 +114,7 @@ let exampleMovie7 = Movie(
     categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
     year: 2011,
     rating: "TV-MA",
-    defaultEpisode: exampleEpisode1,
+    defaultEpisode: exampleCurrentEpisode1,
     creators: "Tom Cruise",
     cast: "Tom Cruise",
     moreLikeThisMovies: [],
@@ -124,7 +124,67 @@ var exampleMovies: [Movie] {
     return [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7].shuffled()
 }
 // Episode
-let exampleEpisode1 = CurrentEpisode(episodeName: "Bringing the Ending", description: "Six months after the disappearances the police from a task for. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 2, episode: 1)
+let exampleCurrentEpisode1 = CurrentEpisode(
+    episodeName: "Bringing the Ending",
+    description: "Six months after the disappearances the police from a task for. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.",
+    season: 2,
+    episode: 1)
+
+let exampleEpisode1 = Episode(
+    name: "Bringing the Ending",
+    season: 1,
+    episodeNumber: 1,
+    thumbnailImageURLString: "https://picsum.photos/300/102",
+    description: "Six months after the disappearances the police from a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.",
+    length: 53,
+    videoURL: exampleVideoURL)
+
+let exampleEpisode2 = Episode(
+    name: "Bringing the Ending",
+    season: 1,
+    episodeNumber: 2,
+    thumbnailImageURLString: "https://picsum.photos/300/103",
+    description: "Clausen and Charlotte interview Regina. The stranger takes Hannah to 1987, where Claudia has unnerving enconter and Egon visits an old nemesis.",
+    length: 54,
+    videoURL: exampleVideoURL)
+
+let exampleEpisode3 = Episode(
+    name: "Ghost",
+    season: 1,
+    episodeNumber: 3,
+    thumbnailImageURLString: "https://picsum.photos/300/104",
+    description: "In 1954, a missing Helge returns, but he'll only speak to Noah. In 1987, Claudia brings the time machine to Tannhaus, and Egon questions Ulrich again.",
+    length: 56,
+    videoURL: exampleVideoURL)
+
+let exampleEpisode4 = Episode(
+    name: "Bringing the Ending Back",
+    season: 2,
+    episodeNumber: 1,
+    thumbnailImageURLString: "https://picsum.photos/300/105",
+    description: "Six months after the disappearances the police from a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.",
+    length: 53,
+    videoURL: exampleVideoURL)
+
+let exampleEpisode5 = Episode(
+    name: "Bringing the Ending Back",
+    season: 2,
+    episodeNumber: 2,
+    thumbnailImageURLString: "https://picsum.photos/300/106",
+    description: "Clausen and Charlotte interview Regina. The stranger takes Hannah to 1987, where Claudia has unnerving enconter and Egon visits an old nemesis.",
+    length: 54,
+    videoURL: exampleVideoURL)
+
+let exampleEpisode6 = Episode(
+    name: "Ghost Back",
+    season: 3,
+    episodeNumber: 3,
+    thumbnailImageURLString: "https://picsum.photos/300/107",
+    description: "In 1954, a missing Helge returns, but he'll only speak to Noah. In 1987, Claudia brings the time machine to Tannhaus, and Egon questions Ulrich again.",
+    length: 56,
+    videoURL: exampleVideoURL)
+// Episodes
+let exampleEpisodes = [exampleEpisode1, exampleEpisode2, exampleEpisode3, exampleEpisode4, exampleEpisode5, exampleEpisode6]
 
 extension LinearGradient {
     static let blackOpacityGradient = LinearGradient(

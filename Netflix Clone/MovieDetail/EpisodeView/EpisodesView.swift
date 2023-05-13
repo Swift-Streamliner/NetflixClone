@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct EpisodesView: View {
     var episodes: [Episode]
@@ -18,7 +19,7 @@ struct EpisodesView: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 14) {
             // Season Picker
             HStack {
                 Button(action: {
@@ -34,11 +35,16 @@ struct EpisodesView: View {
             }
             // Episodes List
             ForEach(getEpisode(forSeason: selectedSeason)) { episode in
-                Text(episode.name)
+                VStack(alignment: .leading) {
+                    EpisodeItemPreview(episode: episode)
+                    EpisodeItemDescription(description: episode.description)
+                }
+                .padding(.bottom, 10)
             }
             Spacer()
         }
         .foregroundColor(.white)
+        .padding(.horizontal, 20)
     }
 }
 

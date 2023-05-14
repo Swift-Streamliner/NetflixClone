@@ -12,8 +12,9 @@ struct EpisodeItemPreview: View {
     
     var body: some View {
         HStack {
-            VideoPreviewImage(imageURL: episode.videoURL, videoURL: episode.thumbnailURL)
+            VideoPreviewImage(imageURL: episode.thumbnailURL, videoURL: episode.videoURL)
                 .frame(width: 120, height: 70)
+                .clipped()
             
             VStack(alignment: .leading) {
                 Text("\(episode.episodeNumber). \(episode.name)")

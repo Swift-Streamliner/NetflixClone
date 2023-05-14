@@ -66,7 +66,7 @@ struct MovieDetail : View {
                             }
                             .padding(.leading, 20)
                             
-                            CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: movie)
+                            CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: movie, showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
                         }
                     }
                     .padding(.horizontal, 10)
@@ -84,6 +84,6 @@ struct MovieDetail : View {
 
 struct MovieDetail_Preview : PreviewProvider {
     static var previews: some View {
-        MovieDetail(movie: exampleMovie3)
+        MovieDetail(movie: exampleMovie1)
     }
 }

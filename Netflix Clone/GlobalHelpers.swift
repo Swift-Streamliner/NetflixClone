@@ -32,11 +32,12 @@ let exampleMovie1 = Movie(
     categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
     year: 2020,
     rating: "TV-MA",
-    numberOfSeasons: 1,
+    numberOfSeasons: 3,
     defaultEpisode: exampleCurrentEpisode1,
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: exampleMovies,
+    episodes: exampleEpisodes,
     promotionHeadline: "Watch Season 1 Now",
     trailers: exampleTrailers)
 
@@ -66,6 +67,7 @@ let exampleMovie3 = Movie(
     creators: "Barah bo Odan, Jantje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [],
+    episodes: exampleEpisodes,
     promotionHeadline: "New Episodes Coming Soon",
     trailers: exampleTrailers)
 
